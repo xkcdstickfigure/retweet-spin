@@ -27,10 +27,12 @@ main {
 .name {
     font-weight: bold;
     margin: 0;
+    font-size: 40px;
 }
 
 .username {
     color: #23539b;
     font-weight: normal;
     margin: 0;
+    font-size: 30px;
 }
