@@ -1,15 +1,15 @@
 require("dotenv").config();
-const getRetweeter = require("./retweeter");
-let user = null;
+const getRetweet = require("./retweet");
+let rt = null;
 
 // Fetch user every 7 seconds
 setInterval(async () => {
     try {
-        user = await getRetweeter();
+        rt = await getRetweet();
     } catch (err) {
-        user = null;
+        rt = null;
     }
-}, 7000);
+}, 15000);
 
 // Web Server
 const express = require("express");
@@ -19,10 +19,10 @@ app.use(express.static("web"));
 
 // Data Endpoint
 app.get("/data", (_req, res) => {
-    res.json(user ? {
-        name: user.name,
-        username: user.screen_name,
-        image: user.profile_image_url
+    res.json(rt ? {
+        name: rt.user.name,
+        username: rt.user.screen_name,
+        image: rt.user.profile_image_url_https.replace("_normal", "")
     } : {
         name: "Alles",
         username: "AllesHQ",
