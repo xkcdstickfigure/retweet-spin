@@ -11,15 +11,15 @@ body {
 main {
     background: #ffffff;
     border-radius: 10px;
-    width: 500px;
+    width: 700px;
     padding: 50px;
     text-align: center;
     margin: 0 auto;
 }
 
 .image {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     margin-bottom: 50px;
 }
@@ -27,12 +27,12 @@ main {
 .name {
     font-weight: bold;
     margin: 0;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .username {
     color: #23539b;
     font-weight: normal;
     margin: 0;
-    font-size: 30px;
+    font-size: 40px;
 }
