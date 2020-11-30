@@ -22,6 +22,7 @@ main {
     height: 700px;
     border-radius: 50%;
     margin-bottom: 50px;
+    animation: rotate 5s infinite;
 }
 
 .name {
@@ -35,4 +36,13 @@ main {
     font-weight: normal;
     margin: 0;
     font-size: 40px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
 }
