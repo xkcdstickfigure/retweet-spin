@@ -6,6 +6,7 @@ body {
     justify-content: center;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 main {
@@ -36,6 +37,17 @@ main {
     font-weight: normal;
     margin: 0;
     font-size: 40px;
+}
+
+.message {
+    margin: 0;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
 }
 
 @keyframes rotate {
