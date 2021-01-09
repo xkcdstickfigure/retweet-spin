@@ -8,7 +8,7 @@ setInterval(async () => {
     try {
         rt = await getRetweet();
     } catch (err) {
-        console.log(err);
+        console.error(err);
         rt = null;
     }
 }, 15000);
