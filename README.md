@@ -1,4 +1,2 @@
-# Retweet Page
-This is a page that shows the user that most recently retweeted a tweet.
-
-A message can be displayed if a file named `message.txt` is created.
+# retweet-spin
+I used OBS with a browser source to stream this page into a Periscope (RIP) stream, which was embedded in a tweet. Then the server would get the profile information of the last user to retweet that tweet and it would be displayed on the page. This made a lot of people retweet the tweet for some reason.
